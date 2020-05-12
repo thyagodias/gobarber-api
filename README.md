@@ -3,4 +3,4 @@
 ### API de agendamento de atendimento para barbearias
 
 
-###### Minha adaptação do aplicação feita no bootcamp da RocketSeat
+###### Minha adaptação da aplicação proposta no bootcamp GoStack11 da RocketSeat
