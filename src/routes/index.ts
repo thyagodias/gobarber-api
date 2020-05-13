@@ -6,7 +6,7 @@ const routes = Router();
 routes.use('/appointments', appointmentsRouter);
 
 routes.get('/', (request, response) => {
-  return response.json({ message: 'tudo ok' })
+  return response.json({ message: 'API GoBarber' });
 });
 
 export default routes;
