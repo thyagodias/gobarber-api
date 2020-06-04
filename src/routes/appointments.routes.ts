@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { startOfHour, parseISO } from 'date-fns';
+import { parseISO } from 'date-fns';
 import { getCustomRepository } from 'typeorm';
 
 import AppointmentsRepository from '../repositories/AppointmentsRepository';
@@ -13,7 +13,7 @@ const appointmentsRouter = Router();
 appointmentsRouter.get('/', async (request, response) => {
   const appointmentsRepository = getCustomRepository(AppointmentsRepository);
   const appointments = await appointmentsRepository.find();
-  response.json(appointments);
+  return response.json(appointments);
 });
 
 /**
